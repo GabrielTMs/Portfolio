@@ -138,9 +138,9 @@ div#skills {
 
 span.IconCor {
     color: var(--CorAzul);
+    font-size: 1.6em;
     padding: 0px;
     margin-right: 5px;
-    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.575);
 }
 
 h2 {
