@@ -1,6 +1,6 @@
 @charset "UTF-8";
 
-@media screen and (min-width:2000px) {
+@media screen and (min-width:768px) {
 
     div#GridControl {
     display: grid;
@@ -51,4 +51,12 @@ span.material-symbols-outlined {
     border-radius: 10px;
     cursor: pointer;
 }
+
+div#conteiner {
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 30px;
+}
+
+
 }
