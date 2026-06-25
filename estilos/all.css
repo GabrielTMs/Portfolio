@@ -12,6 +12,7 @@
     --CorAzul:#534ED9;
     --CorTextos:#000000;
     --CorTextosInvertido:#ffffff;
+    --CorBrancoeCinza:#cecece;
 }
 
 body {
@@ -203,4 +204,38 @@ div.porcentagemBarra {
     height: 100%;
     border-radius: 5px;
 }
+section#conteinerFormacao {
+    display: flex;
+    flex-flow: column-reverse nowrap;
+    gap: 15px;
+}
 
+div.cursos {
+    background-color:var(--CorBrancoeCinza);
+    padding: 10px;
+    border-radius: 8px;
+    border-left: 7px solid var(--CorAzul);
+    cursor: pointer;
+}
+
+div.cursos:hover {
+    border-left: 12px solid var(--HeaderBackgroundCor);
+    transition: border-width .5s, border-color .5s;
+    transition-timing-function: ease;
+}
+
+p.periodo {
+    font: normal bold 1.1em Arial, Helvetica, sans-serif;
+    padding-left: 8px;
+}
+
+h2.formacao {
+    font: normal bold 1.5em Arial, Helvetica, sans-serif;
+    margin: 4px 0px;
+}
+
+p.titulacao {
+    text-align: justify;
+    font: normal 1em Arial, Helvetica, sans-serif;
+    line-height: 20px;
+}
