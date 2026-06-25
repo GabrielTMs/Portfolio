@@ -239,3 +239,29 @@ p.titulacao {
     font: normal 1em Arial, Helvetica, sans-serif;
     line-height: 20px;
 }
+
+div.projeto {
+    display: flex;
+    flex-flow: column-reverse nowrap;
+    align-items: center;
+    background-color: var(--CorBrancoeCinza);
+    padding: 13px 0px 8px 0px;
+    border-radius: 8px;
+}
+
+div img.ProjetImag {
+    width: 95%; 
+    border-radius: 10px;
+}
+
+div.informacoes h3{
+    text-align: center;
+    margin: 15px 0px;
+}
+
+div.informacoes p {
+    text-align: justify;
+    align-self: flex-start;
+    padding: 0px 10px 10px 10px;
+    line-height: 24px;
+}
