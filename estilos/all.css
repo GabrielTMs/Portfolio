@@ -164,6 +164,10 @@ section {
     margin: 20px 0px;
 }
 
+section#Projetos {
+    margin: 10px 0px 0px 0px;
+}
+
 section span.material-symbols-outlined {
     padding: 0px;
     margin: 0px;
@@ -216,12 +220,12 @@ div.cursos {
     border-radius: 8px;
     border-left: 7px solid var(--CorAzul);
     cursor: pointer;
+    transition: border-width .5s, border-color .5s;
+    transition-timing-function: ease;
 }
 
 div.cursos:hover {
     border-left: 12px solid var(--HeaderBackgroundCor);
-    transition: border-width .5s, border-color .5s;
-    transition-timing-function: ease;
 }
 
 p.periodo {
@@ -244,13 +248,22 @@ div.projeto {
     display: flex;
     flex-flow: column-reverse nowrap;
     align-items: center;
+    margin: 20px 0px;
     background-color: var(--CorBrancoeCinza);
     padding: 13px 0px 8px 0px;
     border-radius: 8px;
+    border-left: 7px solid var(--CorAzul);
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.384);
+    transition: border-width .5s, border-color .5s;
+    transition-timing-function: ease;
+}
+
+div.projeto:hover {
+    border-left: 12px solid var(--HeaderBackgroundCor);
 }
 
 div img.ProjetImag {
-    width: 95%; 
+    width: 97%; 
     border-radius: 10px;
 }
 
@@ -260,8 +273,27 @@ div.informacoes h3{
 }
 
 div.informacoes p {
+    font: normal 1em Arial, Helvetica, sans-serif;
     text-align: justify;
     align-self: flex-start;
     padding: 0px 10px 10px 10px;
     line-height: 24px;
+}
+
+a {
+    text-align: center;
+}
+
+details.descricao {
+    margin-top: 5px;
+    cursor: pointer;
+}
+
+summary {
+   padding-left: 15px;
+}
+
+details.descricao  p {
+       text-align: center; 
+        
 }
