@@ -81,6 +81,10 @@ div#perfil {
     text-align: justify;
 }
 
+#TirandoEspac {
+    display: none;
+}
+
 h2#titPerf {
     display: block;
     font: normal bold 2.1em Arial, Helvetica, sans-serif;
