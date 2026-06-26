@@ -24,7 +24,7 @@
 }
 
 header h1 {
-    color: var(--CorTitulo);
+    color: var(--CorTextosInvertido);
     text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.534);
     font-size: 2em;
     text-align: center;
