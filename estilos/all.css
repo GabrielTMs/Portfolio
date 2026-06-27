@@ -58,8 +58,8 @@ div#options {
     text-align: center;
 }
 
-span.material-symbols-outlined {
-    color: #444186;
+a.link > span.material-symbols-outlined {
+    color: var(--CorTitulo);
     text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.61);
     padding: 10px;
     margin-left: 10px;
@@ -69,13 +69,11 @@ span.material-symbols-outlined {
 }
 
  a#botao-tema {
-    font-size: 1.3em;
-    padding: 10px;
-
-    
+    font-size: 1.4em;
+    padding: 10px;   
 }
 
-span.material-symbols-outlined:hover {
+a.link > span.material-symbols-outlined:hover {
     color: #000000;
     background-color: white;
     transition: background-color .3s, color .3s;
@@ -315,4 +313,16 @@ summary {
 details.descricao  p {
        text-align: center; 
         
+}
+
+span.ApenasTelaMedia {
+    display: none;
+}
+
+footer {
+    background-color: var(--HeaderBackgroundCor);
+}
+
+footer h1 {
+    font: normal 1em Arial, Helvetica, sans-serif;
 }
