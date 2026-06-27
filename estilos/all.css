@@ -26,6 +26,10 @@ div#GridControl {
     justify-content: center;
 }
 
+#perfil, #skills, #BlocotitFormac, #iProjeto {
+    /*scroll-margin-top: 120px;*/
+}
+
 header {
     background-color: var(--HeaderBackgroundCor);
     grid-row: 1/2;
@@ -35,6 +39,9 @@ header {
     justify-content: center;
     align-items: center;
     font-family: Arial, Helvetica, sans-serif;
+    position: sticky;
+    top: 0;
+    z-index: 1;
 
 }
 
@@ -48,6 +55,7 @@ header h1 {
 
 div#options {
     flex: 0 1 auto;
+    text-align: center;
 }
 
 span.material-symbols-outlined {
@@ -58,6 +66,13 @@ span.material-symbols-outlined {
     font-size: 1.8em;
     border-radius: 10px;
     cursor: pointer;
+}
+
+ a#botao-tema {
+    font-size: 1.3em;
+    padding: 10px;
+
+    
 }
 
 span.material-symbols-outlined:hover {
