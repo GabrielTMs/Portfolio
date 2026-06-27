@@ -12,7 +12,7 @@ function temaEscuro(tipo) {
     botao.innerHTML = '<i class="fa-solid fa-sun"></i>';
   } else {
     body.classList.remove('escuro');
-    botao.innerHTML = '<i class="fa-solid fa-moon"></i>';
+    botao.innerHTML = '<i class="fa-solid fa-moon Iconmenu"></i>';
   }
 }
 

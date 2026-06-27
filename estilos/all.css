@@ -17,17 +17,13 @@
 
 body {
     width: 100%;
-    height: 100vh;
+    min-height: 100vh;
 }
 
 div#GridControl {
     display: grid;
-    grid-template: auto 1fr/ 30px 1fr 30px;
+    grid-template: auto 1fr auto/ 30px 1fr 30px;
     justify-content: center;
-}
-
-#perfil, #skills, #BlocotitFormac, #iProjeto {
-    /*scroll-margin-top: 120px;*/
 }
 
 header {
@@ -58,7 +54,7 @@ div#options {
     text-align: center;
 }
 
-a.link > span.material-symbols-outlined {
+.Iconmenu {
     color: var(--CorTitulo);
     text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.61);
     padding: 10px;
@@ -68,12 +64,12 @@ a.link > span.material-symbols-outlined {
     cursor: pointer;
 }
 
- a#botao-tema {
-    font-size: 1.4em;
-    padding: 10px;   
+#botao-tema span {
+   
 }
+ 
 
-a.link > span.material-symbols-outlined:hover {
+a.link > .Iconmenu:hover {
     color: #000000;
     background-color: white;
     transition: background-color .3s, color .3s;
@@ -84,7 +80,7 @@ header a {
 }
 
 main {
-    grid-row: 2/-1;
+    grid-row: 2/-2;
     grid-column: 2/-2;
     padding: 65px 0px 0px 0px;
     font-family: Arial, Helvetica, sans-serif;
@@ -320,9 +316,26 @@ span.ApenasTelaMedia {
 }
 
 footer {
+    grid-column: 1/-1;
+    grid-row: 3/-1;
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    justify-content: center;
     background-color: var(--HeaderBackgroundCor);
 }
 
 footer h1 {
-    font: normal 1em Arial, Helvetica, sans-serif;
+    text-align: center;
+    color: var(--CorTextos);
+    font: normal 1.3em Arial, Helvetica, sans-serif;
+    padding: 10px;
+}
+
+footer .FooterIcons {
+    Text-transform: uppercase;
+    font-size: 1.3em;
+    color: var(--CorTitulo);
+    transform: translateY(15%);
+    filter: drop-shadow(1px 1px 1px rgba(0, 0, 0, 0.185));
 }
