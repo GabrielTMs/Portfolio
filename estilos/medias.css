@@ -63,7 +63,7 @@ div#options {
     cursor: pointer;
 }
 
-span.TelaMdesaparece {
+.TelaMdesaparece {
     display: inline;
 }
 
@@ -219,6 +219,14 @@ div#options {
     font-size: 2.1em;
 }
 
+.TelaMdesaparece {
+    display: none;
+}
+
+.ApenasTelaMedia {
+    display: inline;
+}
+
 main {
     grid-row: 2/-1;
     grid-column: 2/-2;
@@ -337,12 +345,12 @@ article.ProjetESkills {
     top: 100px;
 }
 
-main section#skills section span.material-symbols-outlined {
+main section#skills span.material-symbols-outlined {
     transform: translateY(14%);
 }
 
-section#Projetcamp > section span.material-symbols-outlined {
-    transform: translateY(14%);
+section#Projetcamp > span.material-symbols-outlined {
+    transform: translateY(13%);
 }
 
 section#skills h2, section span.material-symbols-outlined {
