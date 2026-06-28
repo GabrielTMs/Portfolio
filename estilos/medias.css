@@ -147,19 +147,21 @@ div#conteiner {
 
 div.projeto {
     flex-flow: column-reverse nowrap;
-    align-items: flex-start;
+    align-items: center;
+    justify-content: center;
 
 }
 
 div.informacoes {
     width: 100%;
     max-width: 400px;
-    text-align: justify;
+    text-align: center;
 }
 
 div.informacoes h3 {
     font: normal bold 1.3em Arial, Helvetica, sans-serif;
     padding: 0px 2px;
+    text-align: center;
 }
 
 div img.ProjetImag {
@@ -207,6 +209,14 @@ header h1 {
     padding-left: 80px;
     align-self: center;
     text-align: center;
+}
+
+div#options {
+    padding-right: 36px;
+}
+
+.Iconmenu {
+    font-size: 2.1em;
 }
 
 main {
@@ -305,12 +315,38 @@ iframe {
     margin: 44px auto 0px auto;
 }
 
+section#BlocotitFormac h2 {
+    font-size: 2.8em;
+}
+
+p.periodo {
+    font-size: 1.3em;
+}
+h2.formacao {
+    font-size: 1.7em;
+}
+p.titulacao {
+    font-size: 1.1em;
+}
+
 article.ProjetESkills {
     grid-column: 1/2;
     grid-row: 3/-1;
     position: sticky;
     height: fit-content;
     top: 100px;
+}
+
+main section#skills section span.material-symbols-outlined {
+    transform: translateY(14%);
+}
+
+section#Projetcamp > section span.material-symbols-outlined {
+    transform: translateY(14%);
+}
+
+section#skills h2, section span.material-symbols-outlined {
+    font-size: 2.8em;
 }
 
 article#formacampo, article#iProjeto {
@@ -328,24 +364,29 @@ div#conteiner {
     grid-template-columns: 1fr;
     gap: 27px;
 }
+
+section#Projetcamp h2 {
+    font-size: 2.8em;
+}
+
 div.projeto {
     display: flex;
     flex-flow: row nowrap;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: flex-start;
     gap: 10px;
 
 }
 
 div.informacoes h3{
-    align-self: flex-start;
-    text-align: center;
+    font-size: 1.4em;
+    text-align: left;
     margin: 0px 0px 10px 0px;
-    padding-left: 3px;
+    padding-left: 7px;
 }
 
 div.informacoes p {
-    font: normal 1em Arial, Helvetica, sans-serif;
+    font: normal 1.1em Arial, Helvetica, sans-serif;
     text-align: justify;
     align-self: flex-start;
     padding: 0px 8px;
@@ -353,6 +394,17 @@ div.informacoes p {
     line-height: 24px;
     width: 100%;
     max-width: 800px;
+}
+
+summary {
+    margin: 16px 0px 0px 0px;
+    padding-left: 15px;
+    font-size: 1.2em;
+}
+
+div.informacoes details p{
+    margin-top: 6px;
+    padding: 0px 10px 0px 15px;
 }
 
 div.projeto a.CentroImagRow {
@@ -365,7 +417,10 @@ div.projeto a.CentroImagRow {
 } */
 
 div.projeto img.UmpoucomenorImagem3d {
-    width: 97%;
+    width: 95%;
+    aspect-ratio: 16/9; 
+    border-radius: 10px;
+    object-fit: cover;
 }
 
 div.projeto img.UmpoucomenorCordero {
@@ -374,26 +429,27 @@ div.projeto img.UmpoucomenorCordero {
 
 div.projeto > div.informacoes > h3.ParagCordero {
     width: 100%;
-    text-align: center;
     
     
-}
-
-div.projeto .Parag3d {
-    width: 100%;
-    max-width: 800px;
 }
 
 div.projeto a.Linkdo3d {
     text-align: right;
-    padding-right: 8px;
+    padding-right: 10px;
 }
 
 div img.ProjetImag {
-    flex: 0 1 500px;
     aspect-ratio: 16/9; 
     border-radius: 10px;
     object-fit: cover;
+}
+
+footer h1 {
+    font-size: 1.4em;
+}
+
+footer .FooterIcons {
+    font-size: 1.4em;
 }
 
 }
