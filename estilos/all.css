@@ -59,13 +59,9 @@ div#options {
     text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.61);
     padding: 10px;
     margin-left: 10px;
-    font-size: 1.8em;
+    font-size: 1.6em;
     border-radius: 10px;
     cursor: pointer;
-}
-
-#botao-tema span {
-   
 }
  
 
