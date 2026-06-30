@@ -14,6 +14,7 @@
     --CorTextosInvertido:#ffffff;
     --CorClaraBody:#ffffff;
     --CorBrancoeCinza:#cecece;
+    --CorMainTelaGrande:#ffffff;
 }
 
 .escuro {
@@ -25,6 +26,7 @@
     --CorTituloInvertido:#d1b176;
     --CorClaraBody:#181818;
     --CorBrancoeCinza:#4b3527;
+    --CorMainTelaGrande:#132c3d3a;
 }
 
 body {
@@ -207,6 +209,7 @@ div#conteiner {
 }
 
 div.inform {
+    color: var(--CorTextos);
     display: flex;
     flex-flow: row nowrap;
     justify-content: space-between;
