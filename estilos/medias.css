@@ -169,6 +169,7 @@ div img.ProjetImag {
     aspect-ratio: 16/9; 
     border-radius: 10px;
     object-fit: cover;
+    margin-left: 0px;
 }
 
 div.projeto a {
@@ -180,7 +181,7 @@ div.projeto a {
 @media screen and (min-width:1024px) {
 
     body {
-        background-color: var(--CorBrancoeCinza);
+        background-color: var(--CorClaraBody);
     }
 
     div#GridControl {
@@ -450,6 +451,7 @@ div img.ProjetImag {
     aspect-ratio: 16/9; 
     border-radius: 10px;
     object-fit: cover;
+    margin-left: 0px;
 }
 
 footer h1 {

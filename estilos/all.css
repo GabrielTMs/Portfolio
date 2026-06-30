@@ -8,16 +8,33 @@
 :root {
     --HeaderBackgroundCor: #56a2ee;
     --CorTitulo:#444186;
-    --CorTituloInvertido:#9680d3;
+    --CorTituloInvertido2:#9680d3;
     --CorAzul:#534ED9;
     --CorTextos:#000000;
     --CorTextosInvertido:#ffffff;
+    --CorClaraBody:#ffffff;
     --CorBrancoeCinza:#cecece;
 }
 
+.escuro {
+    --HeaderBackgroundCor: #282d74;
+    --CorTitulo:#52beda;
+    --CorTextosInvertido2:#1e6c91;
+    --CorAzul:#BA6643;
+    --CorTextos:#d1d1d1;
+    --CorTituloInvertido:#d1b176;
+    --CorClaraBody:#181818;
+    --CorBrancoeCinza:#4b3527;
+}
+
 body {
+    background-color: var(--CorClaraBody);
     width: 100%;
     min-height: 100vh;
+}
+
+p {
+    color: var(--CorTextos);
 }
 
 div#GridControl {
@@ -66,8 +83,8 @@ div#options {
  
 
 a.link > .Iconmenu:hover {
-    color: #000000;
-    background-color: white;
+    color: var(--CorTextosInvertido);
+    background-color: var(--CorTitulo);
     transition: background-color .3s, color .3s;
 }
 
@@ -104,7 +121,7 @@ div#perfil img {
     width: 100%;
     max-width: 300px;
     border-radius: 10%;
-    border: 2px solid rgb(58, 167, 201);
+    border: 2px solid var(--HeaderBackgroundCor);
     box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.534);
 }
 
@@ -138,7 +155,7 @@ nav > a {
 }
 
 a:hover {
-    color:#9680d3;
+    color:var(--CorTituloInvertido);
     transition-duration: .2s;
 }
 
@@ -274,9 +291,11 @@ div.projeto:hover {
 div img.ProjetImag {
     width: 97%; 
     border-radius: 10px;
+    margin-left: 8px;
 }
 
 div.informacoes h3{
+    color: var(--CorTextos);
     text-align: center;
     margin: 15px 0px;
 }
@@ -290,7 +309,18 @@ div.informacoes p {
 }
 
 a {
+    text-decoration: none;
+}
+
+a > p {
+    Text-transform: uppercase;
+    font-weight: bold;
+    color: var(--CorTitulo);
     text-align: center;
+}
+
+details.descricao a > p:hover {
+    color: var(--CorTituloInvertido2);
 }
 
 details.descricao {
@@ -299,10 +329,14 @@ details.descricao {
 }
 
 summary {
+   color: var(--CorTextos);
    padding-left: 15px;
 }
 
 details.descricao  p {
+       Text-transform: uppercase;
+       font-weight: bold;
+       color: var(--CorAzul);
        text-align: center; 
         
 }
