@@ -384,6 +384,7 @@ div.projeto {
     justify-content: flex-start;
     align-items: flex-start;
     gap: 10px;
+    padding-right: 10px;
 
 }
 
@@ -398,7 +399,7 @@ div.informacoes p {
     font: normal 1.1em Arial, Helvetica, sans-serif;
     text-align: justify;
     align-self: flex-start;
-    padding: 0px 8px;
+    padding: 0px 0px 0px 8px;
     margin-bottom: 10px;
     line-height: 24px;
     width: 100%;
@@ -421,19 +422,24 @@ div.projeto a.CentroImagRow {
     align-self: center;
 }
 
+div.projeto img.Umpoucomaior {
+    margin-left: 8px;
+}
+
 /*div.projeto img.Umpoucomaior {
     width: 97%;
 } */
 
 div.projeto img.UmpoucomenorImagem3d {
     width: 95%;
+    margin-left: 20px;
     aspect-ratio: 16/9; 
     border-radius: 10px;
     object-fit: cover;
 }
 
 div.projeto img.UmpoucomenorCordero {
-    width: 92%;
+    width: 95%;
 }
 
 div.projeto > div.informacoes > h3.ParagCordero {
@@ -451,7 +457,7 @@ div img.ProjetImag {
     aspect-ratio: 16/9; 
     border-radius: 10px;
     object-fit: cover;
-    margin-left: 0px;
+    margin-left: 10px;
 }
 
 footer h1 {
